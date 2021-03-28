@@ -7,8 +7,12 @@
     "lib": "lib"
   },
   "scripts": {
+    "start": "serve .",
     "test": "test"
   },
   "author": "devrieda@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "serve": "^11.3.2"
+  }
 }
