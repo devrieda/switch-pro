@@ -1,0 +1,14 @@
+{
+  "name": "gamepad",
+  "version": "1.0.0",
+  "description": "Events for Nintendo Switch pro controller",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "author": "devrieda@gmail.com",
+  "license": "MIT"
+}
