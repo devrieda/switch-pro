@@ -36,25 +36,25 @@ switchPro.vibrate()
 ## Available Buttons
 
 Most buttons have a value of either 0 (not-pressed) or 1 (pressed). The 
-Joypad directions have a value ranging from 0 - 1.
+Joypad directions have a value ranging from 0-1.
 
 The right side:
-  B, A, Y, X
+  `B, A, Y, X`
 
 The center buttons: 
-  MINUS, PLUS, HOME, CAPTURE
+  `MINUS, PLUS, HOME, CAPTURE`
 
 The directional pad: 
-  UP, DOWN, LEFT, RIGHT
+  `UP, DOWN, LEFT, RIGHT`
 
 The top buttons: 
-  L, R, ZL, ZR
+  `L, R, ZL, ZR`
 
 The left joystick:
-  LS, LS-UP, LS-DOWN, LS-LEFT, LS-RIGHT
+  `LS, LS-UP, LS-DOWN, LS-LEFT, LS-RIGHT`
 
 The right joystick:
-  RS, RS-UP, RS-DOWN, RS-LEFT, RS-RIGHT
+  `RS, RS-UP, RS-DOWN, RS-LEFT, RS-RIGHT`
 
 An example of the object passed to the callback might look like this, where
 the user is using the Left Stick about 1/2 way to the right and pressing Y:
@@ -66,7 +66,7 @@ the user is using the Left Stick about 1/2 way to the right and pressing Y:
 }
 ```
 
-## Run Examples
+## Run The Example
 
-See it for yourself. Plug in your controller, and then fire up the example
+See it in action. Plug in your controller, and then fire up the example
 page with `yarn start` or `npm start` and visit `localhost:8081`.
