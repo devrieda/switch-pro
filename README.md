@@ -1,9 +1,13 @@
 # Switch Pro Controller
 
-A small package to wrap the gamepad api for the nintendo switch pro
-controller to provide an event based API.
+Support the Switch Pro controller in your JavaScript game!
+
+This is a small package to wrap the gamepad api for the Switch Pro
+controller to provide an observable API.
 
 ## Usage
+
+Listen to button presses
 
 ```
 import SwitchPro from 'switch-pro'
@@ -19,6 +23,15 @@ The value passed to the callback is an object with values for the pressed
 buttons. The callback function will only be invoked if the state of button
 presses on the controller has changed.
 
+
+Make things Rumble
+
+```
+import SwitchPro from 'switch-pro'
+const switchPro = new SwitchPro(window)
+
+switchPro.vibrate()
+```
 
 ## Available Buttons
 
@@ -44,7 +57,7 @@ The right joystick:
   RS, RS-UP, RS-DOWN, RS-LEFT, RS-RIGHT
 
 An example of the object passed to the callback might look like this, where
-the user is nudging the Left Stick about 1/2 way to the right and pressing Y:
+the user is using the Left Stick about 1/2 way to the right and pressing Y:
 
 ```
 {
@@ -52,3 +65,8 @@ the user is nudging the Left Stick about 1/2 way to the right and pressing Y:
   Y: 1
 }
 ```
+
+## Run Examples
+
+See it for yourself. Plug in your controller, and then fire up the example
+page with `yarn start` or `npm start` and visit `localhost:8081`.
