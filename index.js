@@ -1,14 +1,14 @@
 import SwitchPro from './lib/index.js'
 
-function handleChange(gamePad) {
-  const keys = Object.keys(gamePad.pressed)
+function handleChange(gamepad) {
+  const keys = Object.keys(gamepad.pressed)
 
   if (keys.length === 0) {
     input.innerHTML = 'No button pressed at the moment...';
 
   } else {
     const pressed = keys.map((key) => {
-      return `${key}: ${gamePad.pressed[key]}`
+      return `${key}: ${gamepad.pressed[key]}`
     })
     input.innerHTML = pressed.join(' + ');
   }
