@@ -1,7 +1,7 @@
 {
-  "name": "gamepad",
+  "name": "switch-pro",
   "version": "1.0.0",
-  "description": "Events for Nintendo Switch pro controller",
+  "description": "Events for Switch Pro controller",
   "main": "lib/index.js",
   "directories": {
     "lib": "lib"
