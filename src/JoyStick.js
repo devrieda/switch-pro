@@ -1,4 +1,4 @@
-export default class JoyStick {
+class JoyStick {
   constructor(type, horizAxis, vertAxis) {
     this.type      = type
     this.horizAxis = horizAxis
@@ -26,3 +26,5 @@ export default class JoyStick {
     return pressed
   }
 }
+
+export default JoyStick

@@ -23,7 +23,7 @@ const BUTTON_MAPPING = {
   17: 'CAPTURE',
 }
 
-export default class SwitchPro {
+class SwitchPro {
   constructor(window) {
     this.prevPressed = {}
     this.pressed = {}
@@ -98,9 +98,10 @@ export default class SwitchPro {
 
   // get reference to the gamepad
   _getGamepad() {
-    let gamepads = navigator.getGamepads ? navigator.getGamepads() : []
-    if (gamepads.length === 0 || !gamepads[0]) return
-    return gamepads[0]
+    const gps = navigator.getGamepads ? navigator.getGamepads() : []
+    if (gps.length === 0 || !Array.from(gps).some((gp) => !!gp)) return
+
+    return Array.from(gps).find((gp) => !!gp)
   }
 
   _shallowEqual(object1, object2) {
@@ -115,3 +116,5 @@ export default class SwitchPro {
     return true
   }
 }
+
+export default SwitchPro

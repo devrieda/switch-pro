@@ -2,19 +2,16 @@
   "name": "switch-pro",
   "version": "1.0.0",
   "description": "Events for Switch Pro controller",
-  "main": "lib/index.js",
-  "directories": {
-    "lib": "lib"
-  },
+  "repository": "https://github.com/devrieda/switch-pro.git",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "webpack serve --config examples/webpack.config.js --content-base examples --inline --host 0.0.0.0 --port 8081",
-    "test": "test"
+    "start": "snowpack dev --config ./examples/snowpack.config.js",
+    "build": "rollup src/index.js --file dist/index.js --format umd --name \"switchPro\""
   },
-  "author": "Derek DeVries",
+  "author": "Derek DeVries <devrieda@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "webpack": "^5.28.0",
-    "webpack-cli": "^4.6.0",
-    "webpack-dev-server": "^3.11.2"
+    "rollup": "^2.44.0",
+    "snowpack": "^3.2.2"
   }
 }

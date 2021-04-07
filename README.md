@@ -7,7 +7,10 @@ controller to provide an observable API.
 
 ## Usage
 
-Listen to button presses
+There are two basic APIs, one to capture when buttons are pressed,
+and one to send vibration to the controller.
+
+### Button presses
 
 ```
 import SwitchPro from 'switch-pro'
@@ -23,6 +26,7 @@ The value passed to the callback is an object with values for the pressed
 buttons. The callback function will only be invoked if the state of button
 presses on the controller has changed.
 
+### Vibration
 
 Make things Rumble
 
