@@ -101,7 +101,11 @@ class SwitchPro {
     const gps = navigator.getGamepads ? navigator.getGamepads() : []
     if (gps.length === 0 || !Array.from(gps).some((gp) => !!gp)) return
 
-    return Array.from(gps).find((gp) => !!gp)
+    // the gamepad shows up twice when connected via bluetooth
+    //   0: Pro Controller (STANDARD GAMEPAD)
+    //   1: Pro Controller (STANDARD GAMEPAD Vendor: 057e Product: 2009)
+    // we want the one with more buttons mapped
+    return Array.from(gps).find((gp) => gp?.buttons.length === 18)
   }
 
   _shallowEqual(object1, object2) {
