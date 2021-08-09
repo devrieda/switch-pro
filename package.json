@@ -1,6 +1,6 @@
 {
   "name": "switch-pro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Events for Switch Pro controller",
   "repository": "https://github.com/devrieda/switch-pro.git",
   "main": "dist/index.js",
