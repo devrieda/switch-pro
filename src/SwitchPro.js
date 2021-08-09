@@ -42,7 +42,7 @@ class SwitchPro {
   // strong:   Magnitude of the strong actuator (0-1)
   vibrate(delay = 0, duration = 200, weak = 1.0, strong = 1.0) {
     const gp = this._getGamepad();
-    if (!gp) return
+    if (!gp?.vibrationActuator) return
 
     gp.vibrationActuator.playEffect('dual-rumble', {
       startDelay: delay,
