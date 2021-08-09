@@ -1,6 +1,8 @@
 module.exports = {
-  root: "/examples",
+  devOptions: {
+    openUrl: "/examples",
+  },
   alias: {
-    "switch-pro": "../src/index"
+    "switch-pro": "../src/index.js"
   }
 };

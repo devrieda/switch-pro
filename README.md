@@ -73,4 +73,4 @@ the user is using the Left Stick about 1/2 way to the right and pressing Y:
 ## Run The Example
 
 See it in action. Plug in your controller, and then fire up the example
-page with `yarn start` or `npm start` and visit `localhost:8081`.
+page with `yarn start` or `npm start` and visit `localhost:8080/examples`.
